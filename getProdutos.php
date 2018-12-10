@@ -2,7 +2,7 @@
 
 require 'getKey.php';
 
-$ch = curl_init("quadriculando.localhost/rest/V1/products?searchCriteria[pageSize]=20");
+$ch = curl_init($site."rest/V1/products?searchCriteria[pageSize]=20");
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
